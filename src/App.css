@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;;
+}
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background-color:lightblue;
+  color:pink;
+} 
+h2{
+  color:red;
+}
+h3{
+  color:blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.booklist{
+  max-width: 1170px;
+  width:90vw;
+  margin:5rem auto;
+  display: grid;
+  gap:2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width:768px){
+  .booklist{
+    grid-template-columns: repeat(3,1fr);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.book{
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+ 
 }
-
-.App-link {
-  color: #61dafb;
+.book h2{
+  margin-top: 0.5rem;
+  letter-spacing: 0.2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book h3{
+  margin-top: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+.book h4{
+  color:black;
 }
